@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans", sans-serif;
+}
+
+body {
+    width: 100svw;
+    height: 100svh;
+    background: url("./assets/background.jpg") center / cover no-repeat;
+}
+
+.navbar .logo img {
+    border-radius: 50%;
+}
+
+.header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 10px;
+    background-color: #436c78;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 10px auto;
+    padding: 22px;
+    border-radius: 20px;
+}
+
+.navbar .menu-icon {
+    font-size: 2rem;
+    color: #fff;
+}
+
+.navbar .links {
+    display: flex;
+    list-style-type: none;
+    gap: 30px;
+}
+
+.navbar .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+}
+
+.navbar .logo h2 {
+    font-size: 1.7rem;
+    font-weight: 600;
+    color: #fff;
+}
+
+.link {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.link:hover {
+    color: rgb(233, 225, 81);
+}
+
+
+.navbar .login-btn {
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    color: #275360;
+    font-weight: 600;
+    padding: 10px 18px;
+    border-radius: 3px;
+    cursor: pointer;
+    background-color: #fff;
+}
+
+.login-btn:hover {
+    box-shadow: 5px 5px 15px -5px #436c78;
+    color: #05185c;
+    background-color: yellow;
+}
+
+.navbar .logo h2:hover {
+    color: rgb(233, 225, 81);
+}
+
+.menu-icon {
+    padding: 10px;
+    border: 1px solid #51a7c2;
+    border-radius: 50%;
+}
+
+.menu-icon:hover {
+    background-color: #275360;
+    cursor: pointer;
+}
+
+.menu-icon:active {
+    box-shadow: 1px 1px 3px -3px black;
+}
+
+.show-mobile-menu {
+    display: none;
+}
+
+.mobile-menu .mobile-menu-links {
+    background-color: #275360;
+}
+
+.mobile-menu .mobile-menu-links .mobile-menu-link{
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: white;
+    padding-left: 25px;
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.mobile-menu .mobile-menu-links .mobile-menu-link:hover{
+    color: yellow;
+    background-color: #51a7c2;
+}
+
+@media (max-width: 1300px) {
+    .navbar .links  {
+        display: none;
+    }
+
+}
+
+@media (min-width: 1300px) {
+    .navbar .menu-icon {
+        display: none;
+    }
+}
